@@ -1,0 +1,7 @@
+ package com.example.model;
+
+public class admin {
+
+	private String adminID;
+	private String password;
+}

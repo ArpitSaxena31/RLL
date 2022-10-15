@@ -1,0 +1,40 @@
+ package com.app.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name="loginAdmin")
+@AllArgsConstructor
+@Data
+@NoArgsConstructor
+public class Admin {
+
+	@Id
+	private String adminID;
+	private String password;
+	public Object getAdminID() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public Object getPassword() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public void setAdminID(String adminID) {
+		this.adminID = adminID;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	@Override
+	public String toString() {
+		return "Admin [adminID=" + adminID + ", password=" + password + "]";
+	}
+	
+}

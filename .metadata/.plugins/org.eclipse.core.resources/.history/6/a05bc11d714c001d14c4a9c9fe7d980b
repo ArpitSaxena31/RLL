@@ -1,0 +1,21 @@
+ package com.app.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name="loginAdmin")
+@AllArgsConstructor
+@Data
+@NoArgsConstructor
+public class Admin {
+
+	@Id
+	private String adminID;
+	private String password;
+}
